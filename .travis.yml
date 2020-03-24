@@ -1,7 +1,7 @@
 dist: bionic
-   addons:
-     snaps:
-       - hugo
+addons:
+  snaps:
+    - hugo
 
 script: hugo -t hugo-coder
 
