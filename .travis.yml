@@ -1,0 +1,17 @@
+dist: bionic
+   addons:
+     snaps:
+       - hugo
+
+script: hugo version
+script: hugo -t hugo-coder
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: public
+  target_branch: master
+  on:
+    branch: master
