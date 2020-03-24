@@ -3,7 +3,6 @@ dist: bionic
      snaps:
        - hugo
 
-script: hugo version
 script: hugo -t hugo-coder
 
 deploy:
