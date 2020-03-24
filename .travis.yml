@@ -12,6 +12,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
   local_dir: public
+  repo: davisvansant/davisvansant.github.io
   target_branch: master
   on:
     branch: master
